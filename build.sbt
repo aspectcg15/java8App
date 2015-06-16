@@ -18,5 +18,3 @@ initialize := {
     sys.error("Java 8 is required for this project.")
 }
 
-// exposing the play ports
-dockerExposedPorts in Docker := Seq(9000, 9443)
