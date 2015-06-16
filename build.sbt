@@ -17,3 +17,6 @@ initialize := {
   if (sys.props("java.specification.version") != "1.8")
     sys.error("Java 8 is required for this project.")
 }
+
+// exposing the play ports
+dockerExposedPorts in Docker := Seq(9000, 9443)
